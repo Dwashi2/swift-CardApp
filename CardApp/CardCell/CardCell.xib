@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardCell" rowHeight="203" id="KGk-i7-Jjw" customClass="CardCell" customModule="CardApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="203"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="203"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo-visa" translatesAutoresizingMaskIntoConstraints="NO" id="umq-ro-KGZ">
+                        <rect key="frame" x="0.0" y="0.0" width="368" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="oPH-ey-wyf"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Wf-gL-6qD">
+                        <rect key="frame" x="0.0" y="38" width="368" height="2"/>
+                        <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="7YP-Oy-eTa"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bOy-4b-Crw">
+                        <rect key="frame" x="30" y="64" width="308" height="77.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8g-XF-5zs">
+                                <rect key="frame" x="0.0" y="0.0" width="308" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYG-hA-9rE">
+                                <rect key="frame" x="0.0" y="28.5" width="308" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyf-xC-o7L">
+                                <rect key="frame" x="0.0" y="57" width="308" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mastercard" translatesAutoresizingMaskIntoConstraints="NO" id="U35-CQ-WkQ">
+                        <rect key="frame" x="313" y="156" width="51" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="51" id="GUY-1W-Xj4"/>
+                            <constraint firstAttribute="height" constant="43" id="riB-Ge-bkw"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="umq-ro-KGZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="57o-sg-qnK"/>
+                    <constraint firstItem="U35-CQ-WkQ" firstAttribute="top" secondItem="2Wf-gL-6qD" secondAttribute="bottom" constant="116" id="EkA-Q2-KQT"/>
+                    <constraint firstAttribute="trailing" secondItem="umq-ro-KGZ" secondAttribute="trailing" id="Hte-TX-x0M"/>
+                    <constraint firstAttribute="trailing" secondItem="2Wf-gL-6qD" secondAttribute="trailing" id="Nwr-Nz-awz"/>
+                    <constraint firstItem="bOy-4b-Crw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Tpu-GD-VWF"/>
+                    <constraint firstItem="U35-CQ-WkQ" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="16" id="XLR-mq-p3E"/>
+                    <constraint firstAttribute="bottom" secondItem="umq-ro-KGZ" secondAttribute="bottom" id="aap-AC-0TW"/>
+                    <constraint firstItem="2Wf-gL-6qD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bgd-nr-mn4"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bOy-4b-Crw" secondAttribute="trailing" constant="10" id="cvj-vc-NCF"/>
+                    <constraint firstItem="bOy-4b-Crw" firstAttribute="top" secondItem="2Wf-gL-6qD" secondAttribute="bottom" constant="24" id="swr-tx-Q0g"/>
+                    <constraint firstItem="2Wf-gL-6qD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="38" id="t42-if-vtl"/>
+                    <constraint firstItem="U35-CQ-WkQ" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="10" id="vZK-Bc-tdv"/>
+                    <constraint firstItem="umq-ro-KGZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xAu-Uo-Nwh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bandeiraImageView" destination="U35-CQ-WkQ" id="iwn-wd-e1V"/>
+                <outlet property="cardImageView" destination="umq-ro-KGZ" id="W6L-Zs-BAm"/>
+                <outlet property="dateLabel" destination="Qyf-xC-o7L" id="Oeb-eF-miW"/>
+                <outlet property="nomeLabel" destination="p8g-XF-5zs" id="cRb-c0-ESx"/>
+                <outlet property="numeroLabel" destination="sYG-hA-9rE" id="vwI-9L-Z19"/>
+                <outlet property="viewImage" destination="2Wf-gL-6qD" id="O7k-LF-9bC"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="134.93303571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="fundo-visa" width="612" height="344"/>
+        <image name="mastercard" width="185" height="152"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
