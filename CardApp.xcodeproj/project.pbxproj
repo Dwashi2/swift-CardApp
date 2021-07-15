@@ -16,6 +16,7 @@
 		56EB5123269FAA2E00E86E86 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EB5121269FAA2E00E86E86 /* CardCell.swift */; };
 		56EB5124269FAA2E00E86E86 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56EB5122269FAA2E00E86E86 /* CardCell.xib */; };
 		56EB5128269FAA7400E86E86 /* Cards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EB5127269FAA7400E86E86 /* Cards.swift */; };
+		56EB512F269FB91800E86E86 /* CardCustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EB512E269FB91800E86E86 /* CardCustomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		56EB5121269FAA2E00E86E86 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		56EB5122269FAA2E00E86E86 /* CardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCell.xib; sourceTree = "<group>"; };
 		56EB5127269FAA7400E86E86 /* Cards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cards.swift; sourceTree = "<group>"; };
+		56EB512E269FB91800E86E86 /* CardCustomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCustomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				56EB510C269FA8F400E86E86 /* AppDelegate.swift */,
 				56EB510E269FA8F400E86E86 /* SceneDelegate.swift */,
 				56EB5110269FA8F400E86E86 /* ViewController.swift */,
+				56EB512E269FB91800E86E86 /* CardCustomViewController.swift */,
 				56EB5127269FAA7400E86E86 /* Cards.swift */,
 				56EB5126269FAA3600E86E86 /* CardCell */,
 				56EB5112269FA8F400E86E86 /* Main.storyboard */,
@@ -160,6 +163,7 @@
 				56EB510D269FA8F400E86E86 /* AppDelegate.swift in Sources */,
 				56EB510F269FA8F400E86E86 /* SceneDelegate.swift in Sources */,
 				56EB5123269FAA2E00E86E86 /* CardCell.swift in Sources */,
+				56EB512F269FB91800E86E86 /* CardCustomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

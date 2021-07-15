@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var cardTableView: UITableView!
 
     
-    private var arrayCards: [CartoesElement] = [CartoesElement(id: "1234", nome: "Tester Beta", data: "10/21", numero: "1233.1234. ...", bandeira: "mastercard"),CartoesElement(id: "0000", nome: "Tester Alpha", data: "12/01", numero: "0123.0123. ...", bandeira: "mastercard"),CartoesElement(id: "0123", nome: "Tester Zeta", data: "01/11", numero: "0000.1234. ...", bandeira: "visa")]
+     var arrayCards: [CartoesElement] = [CartoesElement(id: "1234", nome: "Tester Beta", data: "10/21", numero: "1233.1234. ...", bandeira: "mastercard"),CartoesElement(id: "0000", nome: "Tester Alpha", data: "12/01", numero: "0123.0123. ...", bandeira: "mastercard"),CartoesElement(id: "0123", nome: "Tester Zeta", data: "01/11", numero: "0000.1234. ...", bandeira: "visa")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +40,22 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
         cell?.setup(value: self.arrayCards[indexPath.row])
         
         return cell ?? UITableViewCell()
+        
+    }
+    
+    
+    //Chama a Proxima Tela
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let cardSelected: CartoesElement = self.arrayCards[indexPath.row]
+        performSegue(withIdentifier: "CardCustomViewController", sender: cardSelected)
+   
+    }
+    //Passa os valores para a proxima tela
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
+            let vc: CardCustomViewController? = segue.destination as? CardCustomViewController
+            vc?.cardSelected = sender as? CartoesElement
         
     }
     
